@@ -1,0 +1,64 @@
+#Assignment 1: Basic If-Else (Voting Eligibility)
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+num = float(input("Enter a number: "))
+#Assignment 2: Nested If-Else (Positive, Negative, Zero)
+if num > 0:
+    print("Positive Number")
+elif num < 0:
+    print("Negative Number")
+else:
+    print("Zero")
+
+#Assignment 3: Even or Odd
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+
+#Assignment 4: Age Group Classification
+age = int(input("Enter your age: "))
+
+if 0 <= age <= 12:
+    print("Child")
+elif 13 <= age <= 19:
+    print("Teenager")
+elif 20 <= age <= 64:
+    print("Adult")
+elif age >= 65:
+    print("Senior")
+else:
+    print("Invalid age entered")
+
+#Assignment 1: Sum of Natural Numbers
+def sum_of_natural_numbers(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Example
+print(sum_of_natural_numbers(10))
+
+#Assignment 2: Factorial of a Number
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Example
+print(factorial(5))
+
+#Assignment 3: Multiplication Table
+def multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+multiplication_table(7)
